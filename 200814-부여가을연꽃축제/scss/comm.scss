@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #222328;
+    }
+    $pink:#e70082;
+
+    .wrap {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 0 0 200px;
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100vh;
+            background: #eee;
+
+            h1 a {
+                display: block;
+                height: 100px;
+                background: url(../images/logo.png) 50% 50% no-repeat;
+                background-size: contain;
+                text-indent: -9999px
+            }
+
+            .nav-1 {
+                width: 90%;
+                margin: auto;
+                text-align: center;
+
+                >li>a {
+                    display: block;
+                    color: #fff;
+                    background: $pink;
+                }
+
+                .nav-2 {
+                    background: #fff;
+
+                    a {
+                        display: block;
+                        padding: 4px 0;
+                        font-size: 14px;
+                        &:hover {
+                            color: #fff;
+                            background: $pink;
+                        }
+                    }
+                 }
+            }
+        }
+
+        .slide {
+            width: 100%;
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 15px 0;
+            padding: 0 10px 0 10px;
+
+            h2 {
+                border-bottom: 1px solid #000;
+                padding: 10px;
+            }
+
+            .sec-bbs {
+                position: relative;
+                width: 48%;
+                .cont a {
+                     font-size: 14px;
+                     padding-left: 10px;
+                     line-height: 30px;
+                     &:hover {
+                         border: 1px solid #000;
+                     }
+                }
+                
+                .link-more {
+                    position: absolute; top: 20px; right: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .sec-gallery {
+                overflow: hidden;
+                width: 48%; height: 252px;
+             img {
+                 width: 100%;
+             }
+            }
+        }
+    
+        .sec-goto {
+            background: #eee;
+        }
+
+        footer {
+            height: 100px;
+            
+        }
+    }
